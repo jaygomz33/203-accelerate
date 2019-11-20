@@ -9,10 +9,10 @@
 
 
 get_header(); ?>
-
+<section>
 	<div id="primary" class="site-content">
 			<div id="content" role="main">
-					
+
 					<?php while ( have_posts() ) : the_post();
 						$services = get_field('services');
 						$client = get_field('client');
@@ -30,7 +30,7 @@ get_header(); ?>
 									<h6>Client: <?php echo $client; ?></h6>
 
 									<?php the_content(); ?>
-									<p><strong><a href="<? echo $link; ?>">Site Link</a></strong></p>
+									<p><strong><a href="<?php echo $link; ?>">Site Link</a></strong></p>
 							</aside>
 					<div class="case-study-images">
 							<?php if($image_1) {
@@ -41,7 +41,7 @@ get_header(); ?>
 					</article>
 			</div>
 		</div>
-
+</section>
 
 
 <?php get_footer(); ?>

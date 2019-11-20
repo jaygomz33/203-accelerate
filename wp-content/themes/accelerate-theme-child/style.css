@@ -16,7 +16,7 @@ Text Domain:  accelerate-theme-child
 }
 
 #masthead {
-  background: none repeat scroll 0 0 #333;
+  background: none repeat scroll 0 0 #45ac9d;
 
 }
 
@@ -29,16 +29,19 @@ Text Domain:  accelerate-theme-child
 	margin-bottom: 2em;
 
 }
-
 .blog-post h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
     margin: 2em 0 .5em;
 }
+.blog-post h2 {
+    font: 700 24px 'Montserrat';
+    color: #fff;
+    margin: 36px 0;
+}
 .blog-post h3 {
 	font-size: 1.5em;
-
 }
 
 .read-more-link {
@@ -46,4 +49,8 @@ Text Domain:  accelerate-theme-child
 	font-weight: 700;
 	color: #45ac9d;
 	text-transform: uppercase;
+}
+div.case-study-images img {
+	width: 100%;
+	height: auto;
 }
