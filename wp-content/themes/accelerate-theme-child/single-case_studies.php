@@ -6,13 +6,13 @@
  * @subpackage Accelerate Theme
  * @since Accelerate Marketing 2.0
  */
-
-
 get_header(); ?>
 <section>
 	<div id="primary" class="site-content">
 			<div id="content" role="main">
-
+					<?php get_field('custom_field_name');
+						$custom_filed = get_field('custom_field_name');
+					?>
 					<?php while ( have_posts() ) : the_post();
 						$services = get_field('services');
 						$client = get_field('client');
@@ -20,9 +20,7 @@ get_header(); ?>
 						$image_1 = get_field("image_1");
 						$image_2 = get_field('image_2');
 						$image_3 = get_field('image_3');
-
 					?>
-
 					<article class="case-study">
 							<aside class="case-study-sidebar">
 									<h2><?php the_title(); ?></h2>
@@ -36,12 +34,11 @@ get_header(); ?>
 							<?php if($image_1) {
 								echo wp_get_attachment_image($image_1, $size);
 							 } ?>
-
 					</div>
 					</article>
+				<?php endwhile; //end of the loop ?>
 			</div>
 		</div>
 </section>
-
 
 <?php get_footer(); ?>
