@@ -30,6 +30,11 @@ get_header(); ?>
 			<h4>Featured Work</h4>
 
 			<ul class="homepage-featured-work">
+				<style type="text/css">
+							ul {
+									list-style-type: none;
+									}
+				</style>
 			<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 					<?php while (have_posts() ) : the_post();
 							$image_1 = get_field("image_1");
@@ -56,6 +61,7 @@ get_header(); ?>
 									<h2><?php the_title(); ?>
 									<?php the_excerpt(); ?>
 									<a href="<?php the_permalink(); ?>"class="read-more-link">Read More<span></a>
+										
 							<?php endwhile; // end of the loop. ?>
 							<?php wp_reset_query(); //resets the altered query back to the original ?>
 					</div>

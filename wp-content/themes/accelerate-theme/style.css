@@ -351,6 +351,7 @@ body {
 }
 #sidebar li {
 	list-style-type: none;
+	display: inline-block;
 }
 #sidebar .widget {
 	padding: 1.75em 1.8em 0;
@@ -625,8 +626,9 @@ a.button, a.button:link {
     color: #909090;
     font-size: .9em;
     line-height: 1.5;
-		
+
 }
+
 /* End FOOTER STYLES */
 
 /* Media Queries */
@@ -687,6 +689,7 @@ a.button, a.button:link {
    #sidebar {
 	   display: block;
 	   width: 31%;
+		 
 	   min-width: 15em;
 	   border-left: 1px solid #bfbfbf;
 	   margin-left: 3em;
@@ -702,7 +705,16 @@ a.button, a.button:link {
 	.social-media-navigation {
 		float: right;
 		width: 20%;
+		height: 20%;
+		border-radius: 50%;
+
+
 	}
+		.social-media-menu li{
+
+
+
+		}
 }
 @media (min-width: 400px) {
 	#navigation .pagination {

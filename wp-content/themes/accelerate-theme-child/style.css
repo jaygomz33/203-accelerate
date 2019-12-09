@@ -28,12 +28,14 @@ Text Domain:  accelerate-theme-child
 	float: left;
 	margin-bottom: 2em;
 
+
 }
 .blog-post h4 {
     font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
     color: #a6a6a6;
     text-transform: uppercase;
     margin: 2em 0 .5em;
+    display: inline-table;
 }
 .blog-post h2 {
     font: 700 24px 'Montserrat';
