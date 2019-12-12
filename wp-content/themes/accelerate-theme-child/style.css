@@ -56,3 +56,11 @@ div.case-study-images img {
 	width: 100%;
 	height: auto;
 }
+
+.social-media-menu ul li{
+  height: 20%;
+  width: 20%;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+}
