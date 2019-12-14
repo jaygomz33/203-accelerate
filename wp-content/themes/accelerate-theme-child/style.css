@@ -63,5 +63,5 @@ div.case-study-images img {
   width: 20%;
   background-color: yellow;
   border-radius: 20%;
-  display: inline-table;
+  display: inline-block;
 }
